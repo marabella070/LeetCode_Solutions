@@ -1,0 +1,20 @@
+function queen, search(queen : array [1..n] of integer)
+begin
+    repeat
+        Generate a random permutation of queenl to queenn;
+        forall i,j; where queeni or queenj is attacked do
+            if swap(queenl,queenj) reduces collisions
+            then perform_swap(queeni, queen j);
+    until no collisions;
+end; 
+
+repeat
+    swaps.performed := O;
+    for i in [1..n] do
+        for j in [(i + 1)..hi do
+            if queeni is attacked or queenj is attacked then
+            if swap(queenl, queeni) reduces collisions then begin
+                perform_swap( queenl, queenj );
+                swaps_performed := swapLperformed + 1;
+            end;
+until sw~pn.performed = O; 
