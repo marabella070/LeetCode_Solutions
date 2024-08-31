@@ -1,14 +1,14 @@
-#include <iostream>
 #include <fstream>
-#include <vector>
+#include <iostream>
+#include <memory>
 #include <sstream>
 #include <string>
-#include <memory>
+#include <vector>
 
 struct ListNode {
 public:
     ListNode() : val(0), next(nullptr) {}
-    ListNode(int x)  : val(x), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode* next) : val(x), next(next) {}
 
     size_t size() const {
@@ -23,7 +23,7 @@ public:
 
     ~ListNode() {
         if (next) {
-            delete next; 
+            delete next;
         }
     }
 
@@ -43,7 +43,7 @@ public:
             if (l1) {
                 current_sum += l1->val;
                 l1 = l1->next;
-            }   
+            }
             if (l2) {
                 current_sum += l2->val;
                 l2 = l2->next;
@@ -59,8 +59,8 @@ public:
 
 void PrintList(std::ostream& output, ListNode* list);
 std::unique_ptr<ListNode> ParseList(std::istringstream& ss);
-std::pair<std::unique_ptr<ListNode>, std::unique_ptr<ListNode>> ParseLine(const std::string& line);
-
+std::pair<std::unique_ptr<ListNode>, std::unique_ptr<ListNode>> ParseLine(
+    const std::string& line);
 
 int main(int argc, char* argv[]) {
     using namespace std::string_literals;
@@ -83,14 +83,13 @@ int main(int argc, char* argv[]) {
         auto lists = ParseLine(buffer);
         PrintList(std::cout, lists.first.get());
         PrintList(std::cout, lists.second.get());
-        std::unique_ptr<ListNode> answer(solution.addTwoNumbers(lists.first.get(), lists.second.get()));
+        std::unique_ptr<ListNode> answer(
+            solution.addTwoNumbers(lists.first.get(), lists.second.get()));
         PrintList(std::cout, answer.get());
     }
 
     return 0;
 }
-
-
 
 void PrintList(std::ostream& output, ListNode* list) {
     bool is_first = true;
@@ -132,7 +131,8 @@ std::unique_ptr<ListNode> ParseList(std::istringstream& ss) {
     return result;
 }
 
-std::pair<std::unique_ptr<ListNode>, std::unique_ptr<ListNode>> ParseLine(const std::string& line) {
+std::pair<std::unique_ptr<ListNode>, std::unique_ptr<ListNode>> ParseLine(
+    const std::string& line) {
     std::istringstream ss(line);
     char ch;
 

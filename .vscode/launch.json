@@ -5,12 +5,12 @@
           "name": "(gdb) Launch",
           "type": "cppdbg",
           "request": "launch",
-          "program": "/home/marabella/Programming/LeetCode_Solutions/002_add_two_numbers/a.out",
+          "program": "/home/marabella/Programming/LeetCode_Solutions/003longest_substring_without_repeating_characters/a.out",
           "args": [
-                "/home/marabella/Programming/LeetCode_Solutions/002_add_two_numbers/test_cases.txt"
+                "/home/marabella/Programming/LeetCode_Solutions/003longest_substring_without_repeating_characters/test_cases.txt"
           ],
           "stopAtEntry": false,
-          "cwd": "/home/marabella/Programming/LeetCode_Solutions/002_add_two_numbers",
+          "cwd": "/home/marabella/Programming/LeetCode_Solutions/003longest_substring_without_repeating_characters",
           "environment": [],
           "externalConsole": false,
           "MIMode": "gdb",
