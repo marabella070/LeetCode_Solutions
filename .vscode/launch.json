@@ -5,12 +5,12 @@
           "name": "(gdb) Launch",
           "type": "cppdbg",
           "request": "launch",
-          "program": "/home/marabella/Programming/LeetCode_Solutions/004median_of_two_sorted_arrays/a.out",
+          "program": "/home/marabella/Programming/LeetCode_Solutions/012integer_to_roman/a.out",
           "args": [
-                "/home/marabella/Programming/LeetCode_Solutions/004median_of_two_sorted_arrays/test_cases.txt"
+                "/home/marabella/Programming/LeetCode_Solutions/012integer_to_roman/test_cases.txt"
           ],
           "stopAtEntry": false,
-          "cwd": "/home/marabella/Programming/LeetCode_Solutions/004median_of_two_sorted_arrays",
+          "cwd": "/home/marabella/Programming/LeetCode_Solutions/012integer_to_roman",
           "environment": [],
           "externalConsole": false,
           "MIMode": "gdb",
